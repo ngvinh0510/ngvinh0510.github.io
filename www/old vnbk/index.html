@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="vi-VN">
+    <head>
+	<title>Vietnam Booking</title>
+        <link rel="shortcut icon" href="images/favicon.png" />
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#fff" />
+        <link rel="manifest" href="https://www.vietnambooking.com/manifest.json">
+        
+        <!-- css -->
+        <link href="css/jquery.mobile-1.4.5.min.css" rel="stylesheet" >
+        <link href="css/base.css" rel="stylesheet" >
+        <link href="css/swiper.min.css" rel="stylesheet" >
+        <link href="css/style.css" rel="stylesheet" >
+        <!-- end css -->
+
+        <!-- js -->
+        <script src="js/jquery.js"></script>
+        <script>var cat = '';</script>
+        <script type="text/javascript"> 
+            $(document).bind("mobileinit", function () {
+                $.mobile.ajaxEnabled = true;
+                $.mobile.ignoreContentEnabled=true; 
+            }); 
+        </script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script src="js/jquery.mobile-1.4.5.min.js"></script>
+        <script src="js/swiper.min.js"></script>
+        <script src="js/jquery-cookies.js"></script>
+        <script src="js/apps.js"></script>
+        
+        <script>
+            $(document).ready(function(){
+                var chk_internet = APP.check_internet();
+                if(chk_internet===0){$(".box-check-internet").addClass("active");}
+                
+                //$.cookie("test","yesss",{ expires: 30 });
+                //$.removeCookie("test");
+                var dict = {"one" : [15, 4.5],
+                    "two" : [34, 3.3],
+                    "three" : [67, 5.0],
+                    "four" : [32, 4.1]};
+                
+                var dictstring = JSON.stringify(dict);
+                
+                });
+                
+                document.addEventListener("deviceready", onDeviceReady, false);
+                function onDeviceReady() {
+                    console.log(cordova.file);
+                    window.addEventListener('filePluginIsReady', function(){ console.log('File plugin is ready');}, false);   
+                }
+                
+                
+               
+        </script>
+        
+        
+        <!-- end js -->
+        
+    </head>
+    <body >
+        <div data-role="page" id="main">
+            <div data-role="panel" data-display="push" data-position-fixed="true" data-position="right" id="nav-menu-right-header">
+                <ul data-role="listview" id="menu-menu-main-button-header" >
+                    <li><a href="sub-cai-dat.html" class="ui-btn-icon-left ui-icon-gear ui-nodisc-icon">Cài đặt</a></li>
+                    <li><a href="sub-ho-tro.html" class="ui-btn-icon-left ui-icon-comment ui-nodisc-icon">Hỗ trợ</a></li>
+                </ul>
+            </div>
+            <header>
+                <div data-role="header" id="box-container-header" data-position="fixed">
+                    <table>
+                        <tr>
+                            <td><a data-ajax="false" href="index.html"><img src="images/logo.jpg" alt="logo vietnambooking"/></a></td>
+                            <td>
+                                <a href="#nav-menu-right-header" class="btn-toggle-menu-header"></a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="clearfix"></div>
+            </header>
+            <div role="main" class="ui-content" >
+                <div class="box-content">
+                    aaaa
+                    <a href="#two" data-transition="slide"  class="ui-btn ui-shadow ui-corner-all">Two</a>
+                    <a href="#popup" class="ui-btn ui-shadow ui-corner-all" data-rel="dialog" data-transition="pop">Show page "popup" (as a dialog)</a>
+                </div>
+            </div>
+            <footer>
+            <div data-role="footer" data-position="fixed" data-theme="b">
+                <div class="box-check-internet">
+                    <table>
+                        <tr>
+                            <td>Lỗi kết nối internet</td>
+                            <td><a data-ajax="false" onClick="location.reload();">Thử lại</a></td>
+                        </tr>
+                    </table>
+                </div>
+                <div data-role="navbar">
+                    <ul>
+                        <li><a data-ajax="false" class="ui-btn-active ui-state-persist ui-btn-icon-top ui-icon-home ui-nodisc-icon" href="index.html">Trang chủ</a></li>
+                        <li><a data-ajax="false" class="ui-btn-icon-top ui-icon-heart ui-nodisc-icon" href="page-yeu-thich.html">Yêu thích</a></li>
+                        <li><a data-ajax="false" class="ui-btn-icon-top ui-icon-shop ui-nodisc-icon" href="page-don-hang.html" >Đơn hàng</a></li>
+                        <li><a data-ajax="false" class="ui-btn-icon-top ui-icon-user ui-nodisc-icon" href="page-tai-khoan.html">Tài khoản</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        </div> <!-- page main -->
+        
+        <!-- Start of second page: #two -->
+        <div data-role="page" id="two" data-theme="a">
+
+                <div data-role="header">
+                        <h1>Two</h1>
+                </div><!-- /header -->
+
+                <div role="main" class="ui-content">
+                    <h2>Two</h2>
+                    <p>I have an id of "two" on my page container. I'm the second page container in this multi-page template.</p>
+                    <p>Notice that the theme is different for this page because we've added a few <code>data-theme</code> swatch assigments here to show off how flexible it is. You can add any content or widget to these pages, but we're keeping these simple.</p>
+                    <p><a href="#main" data-transition="slide"  class="ui-btn ui-shadow ui-corner-all ui-btn-b">Back to page "one"</a></p>
+
+                </div><!-- /content -->
+
+                <div data-role="footer">
+                        <h4>Page Footer</h4>
+                </div><!-- /footer -->
+        </div><!-- /page two -->
+        
+        
+            <!-- Start of third page: #popup -->
+            <div data-role="page" id="popup">
+                <div data-role="header" data-theme="b">
+                    <h1>Dialog</h1>
+                    </div><!-- /header -->
+
+                    <div role="main" class="ui-content">
+                            <h2>Popup</h2>
+                            <p>I have an id of "popup" on my page container and only look like a dialog because the link to me had a <code>data-rel="dialog"</code> attribute which gives me this inset look and a <code>data-transition="pop"</code> attribute to change the transition to pop. Without this, I'd be styled as a normal page.</p>
+                            <p><a href="#main" data-rel="back" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-icon-back ui-btn-icon-left">Back to page "one"</a></p>
+                    </div><!-- /content -->
+
+                    <div data-role="footer">
+                            <h4>Page Footer</h4>
+                    </div><!-- /footer -->
+            </div><!-- /page popup -->
+            
+            
+          
+        
+    </body>
+</html>
