@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="vi-VN">
+    <head>
+	<title>Vietnam Booking</title>
+        <link rel="shortcut icon" href="images/favicon.png" />
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#fff" />
+        <link rel="manifest" href="https://www.vietnambooking.com/manifest.json">
+        
+        <!-- css -->
+        <link href="css/jquery.mobile-1.4.5.min.css" rel="stylesheet" >
+        <link href="css/base.css" rel="stylesheet" >
+        <link href="css/swiper.min.css" rel="stylesheet" >
+        <link href="css/style.css" rel="stylesheet" >
+        <!-- end css -->
+
+        <!-- js -->
+        <script src="js/jquery.js"></script>
+        <script>var cat = '';</script>
+        <script type="text/javascript"> 
+            $(document).bind("mobileinit", function () {
+                $.mobile.ajaxEnabled = true;
+                $.mobile.ignoreContentEnabled=true; 
+            }); 
+        </script>
+        
+        <script src="js/jquery.mobile-1.4.5.min.js"></script>
+        <script src="js/swiper.min.js"></script>
+        <script src="js/apps.js"></script>
+        
+        <script>
+            $(document).ready(function(){
+                var chk_internet = APP.check_internet();
+                if(chk_internet===0){$(".box-check-internet").addClass("active");}
+            });
+        </script>
+        
+        <!-- end js -->
+        
+    </head>
+    <body >
+        <div data-role="page" id="main">
+            
+            <header>
+                <div data-role="header" id="box-container-header-type-tab"  data-position="fixed">
+                    <table>
+                        <tr>
+                            <td><a data-rel="back" href="#" class="ui-btn-icon-left ui-icon-arrow-l ui-nodisc-icon">Hỗ trợ</a></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="clearfix"></div>
+            </header>
+            <div role="main" class="ui-content" >
+                <div class="box-content">
+                    Hỗ trợ
+                </div>
+            </div>
+            
+        </div> <!-- page main -->
+        
+      
+    </body>
+</html>

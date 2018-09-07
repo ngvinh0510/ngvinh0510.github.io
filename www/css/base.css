@@ -1,0 +1,768 @@
+
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+	color:#333;
+	line-height:normal;
+}
+.limit {
+	width:980px;
+	margin:0 auto;
+	padding:40px 0 20px;
+	background-color:white;	
+	min-height:999px;
+	position:relative;
+}
+.box {
+	background-color:#f4f4f4;
+	padding:20px;
+	margin-bottom:30px;
+}
+hr {
+	border:none;
+	border-top:1px solid #eee;
+	height:0;
+	width:auto;
+	line-height:0;
+	padding:0;
+	margin:10px 0;
+}
+a, a:hover {
+	text-decoration:none;
+}
+table {
+	width:100%;
+}
+.page-title {
+	font-size:33px;
+}
+.page-content {
+	font-size:13px;
+	line-height:1.5em;
+	color:#333;
+}
+.page-content p {
+	margin-bottom:1.5em;
+}
+.hotro {
+	position:relative;
+	color:white;
+	font-size:16px;
+	font-family:Tahoma, Geneva, sans-serif;
+	height:250px;
+	line-height:normal;
+	background:url(http://dulieu.vietnambooking.com/var/albums/vietnambooking/hotro.jpg) no-repeat right #67963D;
+	margin:40px 0 20px;
+}
+.hotro-noidung {
+	padding:12px 30px;
+	margin-right:199px;
+	border-right:1px solid #fff;
+}
+.hotro-phone {
+	position:absolute;
+	top:50px;
+	left:20px;
+}
+.hotro-number {
+	margin:20px 0 20px 80px;
+	font-size:13px;
+}
+.hotro-number span {
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size:22px;
+	text-shadow: 1px 1px 2px rgba(255,255,255,0.7);
+}
+.moreLink {
+	background-color:#eee;
+	color:black;
+	padding:30px 20px;
+	margin:0 auto;
+}
+.moreLink .footer-daidien{
+	float:left;
+	margin-right:10px;
+	margin-bottom:10px;
+	border:1px solid #ccc;
+	background-color:white;
+	padding:4px;
+	max-width:70px;
+}
+.footer {
+	padding:10px;
+	background-color:black;
+}
+.public-share {
+	position:fixed;
+	top:30%;
+	left:0;
+	width:70px;
+	text-align:center;
+	background-color:rgba(255,255,255,0.9);
+	padding:20px 0;
+	height:240px;
+}
+.head-bar {
+	background-color:#000;
+	border-left:4px solid #F00;
+	color:white;
+	font-size:16px;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-weight:normal;
+	padding-left:15px;
+	line-height:40px;
+	height:40px;
+	margin:0;
+}
+footer {
+	margin-top:0px;
+}
+/*
+	FORM 
+*/
+.form-header {
+	background-color:#7B9200;
+	padding: 10px 15px;
+	display: block;
+	color:white;
+	font-size:20px;
+}
+.form-content{
+	
+	
+	color:black;
+	font-size:13px;
+	padding:10px 0px;
+}
+.table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td {
+	border-color:#eee;
+}
+.table thead > tr > th, .table tbody > tr > th, .table tfoot > tr > th{
+	border-bottom:1px solid #333;
+}
+.infoHead {
+	padding:12px 20px;
+	background-color: #DF3636;
+	color:white;
+	font-size:16px;
+}
+.infoBox {
+	background-color:#FFF7C0;
+	border-top:none;
+	padding:20px;
+	margin-bottom:20px;
+}
+.infoBox hr {
+	border-color:rgba(0,0,0,0.1);
+	margin:10px 0;
+}
+.plane {
+	max-width:70px;
+	margin:0 20px;
+}
+.diadiem {
+	font-size:28px;
+	line-height:1.2em;
+	font-weight:bold;
+}
+.gia {
+	font-size:22px;
+	color: rgb(21, 104, 194);
+}
+label {
+	font-size:13px;
+	padding:0;
+	margin:10px 0 0 0;
+}
+td {
+	padding-right:5px;
+	padding-bottom:5px;
+}
+td:last-child {
+	padding-right:0;
+}
+.form-control {
+	padding: 6px 9px;
+	color:black;
+	border: 1px solid #ddd;
+	background-color:white;
+	border-radius:0;
+	font-size:16px;
+	box-shadow:none;
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.btn {
+	border-radius:0;
+	border:none;
+	padding:7px 12px;
+}
+/*
+	KHUYEN MAI
+*/
+.my-ticker {
+	height: 320px;
+	overflow: hidden;
+	margin:10px 0 20px;
+	padding:0;
+	list-style: none;
+}
+.my-ticker img {
+	float:left;
+	margin-right:12px;
+}
+.my-ticker li {
+	clear:left;
+	height:60px;
+	display:block;
+	overflow:hidden;
+	padding:7px 3px;
+	background-color:#f7f7f7;
+	margin-bottom:5px;
+}
+.my-ticker li a {
+	color:black;
+	font-size:13px;
+	font-weight:bold;
+}
+/*
+	HOTLINES
+*/
+.menu-hotline {
+	display:block;
+	height:40px;
+	overflow:hidden;
+}
+.menu-hotline ul {
+	margin:0;
+	padding:0;
+	width:100%;
+}
+.menu-hotline ul li {
+	display:table-cell;
+	text-align:center;
+	width:33%;
+	float:left;
+	color:#777;
+	border-right:1px solid #eee;
+}
+.menu-hotline strong {
+	display:block;
+	text-transform:uppercase;
+	font-size:18px;
+	color:black;
+}
+.menu-hotline li:last-child {
+	border-right:none;
+}
+/* 
+	SLIDER
+*/
+div.rotator {
+	width: 620px; /* important to be same as image width */
+	height: 350px; /* important to be same as image height */
+	position: relative; /* important */
+	overflow: hidden; /* important */
+	display: none;
+	margin-bottom:20px;
+	background-color:black;
+}
+div.rotator ul {
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+div.rotator ul li {
+	float:left;
+	position:absolute;
+	list-style: none;
+}
+div.rotator ul li.show {
+	/*z-index:500*/
+}
+/*
+	TICKER
+*/
+.this-ticker {
+	display:block;
+	color:#FF0000;
+	background-color:#f4f4f4;
+	padding:10px 15px;
+	margin-bottom:20px;
+}
+.this-ticker a {
+	font-size:16px;
+	color:black;
+}
+/*
+	MENU
+*/
+.menu {
+	position:relative;
+	display:block;
+	height:40px;
+	background-color:#2385C7;
+	margin:20px 0;
+}
+.menu ul {
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	width:auto;
+}
+.menu ul li {
+	display:block;
+	float:left;
+	margin:0;
+}
+.menu ul li a {
+	display:block;
+	float:left;
+	color:white;
+	font-weight:bold;
+	text-decoration:none;
+	padding:0 20px;
+	height:40px;
+	line-height:40px;
+}
+.menu ul li a:hover {
+	background-color:rgba(0,0,0,0.1);
+}
+.menu ul li:first-child a {
+	background-color:#000;
+}
+/*
+	NEWS
+*/
+.news-more {
+	line-height:normal;
+	margin-bottom:15px;
+	display:block;
+	height:90px;
+	background-color:#f4f4f4;
+	padding:10px;
+}
+.news-more .thumb {
+	float:left;
+	margin-right:12px;
+	width:70px;
+	height:70px;
+	overflow:hidden;
+	background-color:white;
+}
+.news-more .thumb img {
+	max-width:160%; /* 200% */
+	margin-left:-30%; /* 50% (100/2) */
+    height: auto;
+    margin-top:-12%;
+	
+}
+.news-more h2 {
+	margin:0 0 7px;
+	padding:0 7px;
+	font-size:13px;
+	line-height:normal;
+}
+.news-more a {
+	color:black;
+	font-weight:bold;
+}
+/*=======================*/
+.news-block {
+	line-height:normal;
+	border-bottom:1px solid #eeeeee;
+	margin-bottom:20px;
+	clear:left;
+	display:block;
+	height:160px;
+}
+.news-block .thumb {
+	width:200px;
+	height:140px;
+	float:left;
+	overflow:hidden;
+	margin-right:15px;
+	background-color:white;
+}
+.news-block .thumb img {
+	max-width:140%; /* 200% */
+	margin-left:-10%; /* 50% (100/2) */
+    margin-top:-10%;
+    height: auto;	
+}
+.news-block h2 {
+	margin:12px 0 7px;
+	padding:0 7px;
+	font-size:18px;
+	line-height:normal;
+}
+.news-block .ngay {
+	color:#ccc;
+}
+.news-block .mota {
+	color:#555;
+	padding:0 7px;
+}
+/*****************************************************************************
+	
+	General
+	
+******************************************************************************/	
+a, a img {
+	outline:none;
+	border:none;
+}
+img {
+	max-width:100%;
+}
+.full-width {
+	width:100%;
+}
+.upper {
+	text-transform:uppercase;
+}
+.lower {
+	text-transform:lowercase;
+}
+.indam {
+	font-weight:bold;
+}
+.canhgiua {
+	text-align:center;
+}
+.canhphai {
+	text-align:right;
+}
+.canhdeu {
+	text-align:justify;
+}
+.canhtrai {
+	text-align:left;
+}
+.canhtren {
+	vertical-align:top;
+}
+.canhduoi {
+	vertical-align:bottom;
+}
+.ari {
+	font-family:Arial, Helvetica, sans-serif;
+}
+.ver {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+.times {
+	font-family:"Times New Roman", Times, serif;
+}
+.tahoma {
+	font-family:tahoma;
+}
+.sp10 {
+	font-size:10px;
+}
+.sp11 {
+	font-size:11px;
+}
+.sp12 {
+	font-size:12px;
+}
+.sp13 {
+	font-size:13px;
+}
+.sp14 {
+	font-size:14px;
+}
+.sp16 {
+	font-size:16px;
+}
+.sp18 {
+	font-size:18px;
+}
+.sp20 {
+	font-size:20px;
+}
+.sp24 {
+	font-size:24px;
+}
+.sp28 {
+	font-size:28px;
+}
+.sp30 {
+	font-size:30px;
+}
+.sp34 {
+	font-size:34px;
+}
+.sp38 {
+	font-size:38px;
+}
+.sp40 {
+	font-size:40px;
+}
+/*****************************************************************************
+	
+	PICTURES
+	
+******************************************************************************/	
+.has-border {
+	border:1px solid #eee;
+	padding:5px;
+	background-color:white;
+}
+.has-border-left {
+	float:left;
+	margin-right:12px;
+	margin-bottom:7px;
+	background-color:white;
+}
+.has-border-right {
+	float:right;
+	margin-left:12px;
+	margin-bottom:7px;
+	background-color:white;
+}
+.has-shadow {
+	box-shadow:1px 1px 3px #bbb;
+}
+/*****************************************************************************
+	
+	Bang Gia
+	
+******************************************************************************/	
+.banggia {
+	width:100%;
+	border-collapse:collapse;
+	line-height:none;
+	margin-bottom:20px;
+	color:#222;
+	background-color:white;
+}
+.banggia td {
+	border:1px solid #dddddd;
+	padding:4px 15px;
+	vertical-align:top;
+}
+.banggia tr:nth-child(odd) {
+	background-color: #f9f9f9;
+}
+.banggia tr:hover {
+	background-color:#f5f5f5;
+}
+.banggia th {
+    border-top: none;
+    border-bottom: none;
+    color: white;
+    text-align: center;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 16px;
+    vertical-align: middle;
+    padding: 6px 0px;
+    background: #cd003f;
+    text-shadow: none;
+    font-weight: normal;      
+}
+.banggia th:first-child{border-top-left-radius: 5px;}
+.banggia th:first-child span{border-left:0px;}
+.banggia th:last-child{border-top-right-radius: 5px;}
+.banggia th:last-child span{border-right: 0px;}
+.banggia th span{display: block;font-size: 14px;font-family: 'arial'}
+.banggia tbody tr{text-align: center;  border-left: 1px solid #ccc;border-right: 1px solid #ccc;}
+.banggia tbody tr:last-child{border-bottom: 1px solid #ccc;}
+.banggia tr td{border: 1px dashed #b5b5b5;}
+.banggia caption {
+	font-size: 20px;
+	font-weight: 400;
+	margin:10px auto;
+	line-height:normal;
+}
+/*****************************************************************************
+	
+	Phan Trang
+	
+******************************************************************************/	
+.phantrang {
+	width:auto;
+	margin-left:3px;
+}
+.phantrang ul {
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+.phantrang li {
+	display:inline;
+}
+.phantrang a {
+	width:33px;
+	height:33px;
+	line-height:33px;
+	margin:3px;
+	float: left;
+	color:#999;
+	background-color:#ffffff;
+	font-size:20px;
+	text-decoration: none;
+	text-align:center;
+	border:1px solid #ddd;
+}
+.phantrang a:hover {
+	background-color:#eee;
+	color:#333;
+}
+.phantrang a#current {
+	background-color:#333;
+	color:rgb(123, 208, 255);
+	font-weight:bold;
+	border-color:#333;
+}
+/*****************************************************************************
+	
+	tags
+	
+******************************************************************************/	
+.tags ul {
+	margin:1em 0;
+	padding:.5em 10px;
+	text-align:center;
+	background:#71b5e9 url(bg_tags.gif) repeat-x;
+}
+.tags li {
+	margin:0;
+	padding:0;
+	list-style:none;
+	display:inline;
+}
+.tags li a {
+	text-decoration:none;
+	color:#fff;
+	padding:0 2px;
+}
+.tags li a:hover {
+	color:#cff400;
+}
+.tag1 {
+	font-size:100%;
+}
+.tag2 {
+	font-size:120%;
+}
+.tag3 {
+	font-size:140%;
+}
+.tag4 {
+	font-size:160%;
+}
+.tag5 {
+	font-size:180%;
+}
+/* alternative layout */
+
+.tags .alt {
+	text-align:left;
+	padding:0;
+	background:none;
+}
+.tags .alt li {
+	padding:2px 10px;
+	background:#efefef;
+	display:block;
+}
+.tags .alt .tag1, .tags .alt .tag2, .tags .alt .tag3, .tags .alt .tag4, .tags .alt .tag5 {
+	font-size:100%;
+}
+.tags .alt .tag1 {
+	background:#7cc0f4;
+}
+.tags .alt .tag2 {
+	background:#67abe0;
+}
+.tags .alt .tag3 {
+	background:#4d92c7;
+}
+.tags .alt .tag4 {
+	background:#3277ad;
+}
+.tags .alt .tag5 {
+	background:#266ca2;
+}
+/*****************************************************************************
+	
+	Rutgon
+	
+******************************************************************************/	
+.rutgon {
+	padding:10px 20px;
+	overflow:auto;
+	margin-bottom:15px;
+	max-height:300px;
+        border: 1px solid #ccc;
+}
+.rutgon ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+.rutgon li {
+	margin:0;
+	padding:0;
+        padding: 3px 0px;
+}
+.rutgon li a {
+	text-decoration: none;
+	font-size:13px;
+	line-height:30px;
+	padding:0;
+	/* border-bottom:1px solid #f4f4f4; */
+	
+        color:black;
+}
+.rutgon li a:hover {
+	color:black;
+}
+.rutgon li:last-child a {
+	border-bottom:none;
+}
+/*
+	Noi dung chi tiet
+*/
+.page-content .hinhtrai {
+	float:left;
+	margin-right:15px;
+	margin-bottom:10px;
+}
+.page-content .hinhphai {
+	float:right;
+	margin-left:15px;
+	margin-bottom:10px;
+}
+.page-content h2 {
+	font-size:22px;
+	font-weight:normal;
+}
+.page-content h3 {
+	font-size:18px;
+	font-weight:normal;
+}
+/*
+	Tabs
+*/
+.myTabs .nav {
+	margin:10px 0 0;
+}
+.myTabs .tab-content {
+	border: 1px solid #dddddd;
+	border-top:none;
+	padding:12px;
+}
+.myTabs .tab-content ul {
+	padding:0;
+	margin:0;
+}
+.myTabs .tab-content li {
+	border-bottom: 1px solid #f7f7f7;
+	display:block;
+	list-style:none;
+	padding:5px 0;
+}
+.myTabs .tab-content li:last-child {
+	border:none;
+}

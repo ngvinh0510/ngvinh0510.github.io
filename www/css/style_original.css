@@ -1,0 +1,145 @@
+/* DEFAULT */
+.title-h1{color: #142457;background-color: transparent;border-bottom: 1px solid #ddd;font-size: 1.6em;padding-bottom: .2em;margin: 0 0 .7375em;font-size: 20px;text-align: center;margin-top: 20px;}
+.title-h2{font-size: 16px;color: #123373;margin: 0px;padding: 0px;font-weight: bold;}
+.title-h3{font-size:14px;color:#000000;font-weight: bold;margin:0px;padding:0px;}
+/* END DEFAULT */
+
+/* HEADER */
+header{width: 100%;}
+#box-container-header.ui-header-fixed.ui-bar-inherit{background: #000;}
+#box-container-header-type-tab.ui-header-fixed.ui-bar-inherit{background: #000;}
+#box-container-header-type-tab table tr td a{font-size: 16px;color: #fff;text-shadow: none;display: block;line-height: 25px;}
+
+#box-container-header  table tr td{padding:0px 15px;}
+#box-container-header  table img{max-height: 65px;}
+
+#nav-menu-right-header{background: #007aff;}
+#nav-menu-right-header ul{display: block;margin-left: 0px;margin-top: 0px;}
+#nav-menu-right-header ul li{padding:5px;}
+#nav-menu-right-header ul li a{text-shadow: none;font-size: 16px;color: #ffffff;font-weight: normal;display: block;}
+#nav-menu-right-header ul li a:hover{background: #0065d3;border-top: 2px solid #005ec9;}
+#nav-menu-right-header .ui-panel-inner{padding:0px;}
+
+.btn-toggle-menu-header{display: block;padding: 0px 0px;background: url('../images/icon_menu_white.png') no-repeat center center;min-height: 55px;}
+
+
+
+
+a.btn-back-page{margin:10px; font-size: 20px;}
+.box-bar-option{position: relative;}
+
+/* END HEADER */
+
+/* MAIN */
+
+.tab-menu-custom li a{padding: 5px 0px;border-bottom: 1px solid #ccc;}
+
+
+
+/* END MAIN */
+
+/* FOOTER */
+footer{}
+footer .box-footer-menu ul{padding:0px;}
+footer .box-footer-menu ul li{list-style: none;display: inline-block;padding-right: 5px;border-right:1px solid #fff;}
+footer .box-footer-menu ul li:last-child{border-right:0px;}
+footer .box-footer-menu ul li a{text-shadow: none;font-size: 16px;color:#ffffff;font-family: 'os_light';text-decoration: none;}
+footer .box-footer-menu ul li a:hover{color:#ffc62f;}
+
+.box-check-internet{display: none;}
+.box-check-internet.active{display: block;padding: 5px 10px;background: #ff0052;font-size: 16px;font-weight: normal;text-shadow: none;}
+.box-check-internet.active table tr td:last-child{text-align: right;}
+.box-check-internet.active a{color:#fff;font-size: 16px;text-shadow: none;font-weight: bold;}
+/* END FOOTER */
+
+
+
+/* FORM VE */
+select{color:#000;}
+span.title-people{font-weight: bold;}
+span.title-people em{display: block;font-size: 11px;font-style: italic;margin-bottom: 0px;color: #999;font-weight: normal;}
+
+.box-item-ajax{position: relative;}
+.container-item-code-airports{min-width: 100%;border: 1px solid #ccc;overflow: auto;position: absolute;z-index: 111;background: #fff;max-height: 205px;}
+.item-code-airports{padding: 3px;border-bottom: 1px solid #eee;cursor: pointer;white-space: nowrap;}
+.item-code-airports span{cursor: pointer;font-size: 13px;font-size: 13px;font-family: arial;}
+.item-code-airports:hover{background: #1b92d0;color:#FFF;}
+.container-item-code-airports.container-item-code-airports-diemden{max-width:180px;}
+.ui-datepicker{max-height:inherit;}
+.input-group{width:100%;}
+
+/* END FORM VE */
+
+
+
+
+
+/* FRONT PAGE */
+#box-content-layout,#box-content-page,#box-details-content,#box-content-form-page{padding:15px;}
+
+#box-details-content{min-height: 200px;}
+#box-content-layout.loadding,#box-details-content.loadding{background: url('../images/ajax-loader.gif') no-repeat center center; min-height: 200px;}
+#box-content-layout.opacity{opacity: 0.7;}
+/* END FRONT PAGE */
+
+ /* page lien he */
+       
+        #content-layout-page-thong-tin-lien-he{background:#fff;margin-top:20px;}
+        .container-map-contact{min-height:300px;}
+        .list-menu-lien-he ul{padding:0px;margin:0px;margin-top:10px;}
+        .list-menu-lien-he ul li{cursor:pointer;font-family: r_regular;list-style: none;padding:0px 5px;border-right:1px solid black;display:inline-block;font-size:13px;text-align: center;}
+        .list-menu-lien-he ul li.active-map{font-family: r_bold;}
+        .list-menu-lien-he ul li:last-child{border:0px;}
+      
+ 
+        .tlb-contact-page{margin-top:20px;}
+        .tlb-contact-page tr td h3,.tlb-contact-page tr td h2{margin:0px;padding:0px;line-height: 1;}
+        .tlb-contact-page tr td h2{font-size: 25px;color:#176dd4;font-weight: bold;}
+        .tlb-contact-page tr td h3{font-size: 16px;color:#000000;font-weight: bold;line-height: 3;}
+        .tlb-contact-page tr td{color:#000000;font-size: 13px;}
+        .tlb-contact-page tr td span{color:#1d398a;}
+        
+        
+      
+        /* end page lien he */
+/* HINH THUC THANH TOAN */
+ /* payment */
+       .h2-payment{font-weight: normal;color:#0c55ab;font-size: 18px;margin:0px;padding:0px;line-height: 1;}
+       .description-payment{color:#222222;font-size: 13px;}
+       
+       .tlb-payment-page{margin-top:10px;}
+       .tlb-payment-page tr.tr-payment-page:nth-child(odd){background: #f4f9ff;}
+       .tlb-payment-page tr.tr-payment-page:nth-child(even){background:#e4f2ff;}
+       .tlb-payment-page tr.tr-payment-page >td{padding:10px 20px;}
+       .tlb-payment-page tr.tr-payment-page >td:last-child{text-align: right;}
+       .tlb-payment-page tr td table tr td{font-size: 12px;color:#022328;padding:2px 0px;}
+       .tlb-payment-page tr td table tr td h3{margin:0px;padding:0px;line-height: 1;font-size: 14px;font-weight: bold;color:#003c83;}
+       .tlb-payment-page tr td table tr td span{color:#0c55ab;}
+       
+       .box-border{border:1px solid #0c55ab;border-radius: 5px;position: relative;padding:25px 10px 10px 20px;}
+       .box-border .h2-payment.title-border{position: absolute;z-index: 10;top: -13px;    left: 20px;    background: #fff;    padding: 0px 10px;}
+       .box-thanh-toan-bang-tien-mat{margin-top:30px;}
+       .box-thanh-toan-bang-tien-mat table tr td{font-size: 13px;color:#000000;vertical-align: top;}
+       .box-thanh-toan-bang-tien-mat table tr td .box-img{margin-bottom: 10px;}
+       .box-thanh-toan-bang-tien-mat table tr td h3{margin:0px;padding:0px;line-height: 1;color:#000000;font-size: 16px;font-weight: bold;margin-bottom: 10px;} 
+       .box-thanh-toan-bang-tien-mat table tr td ul{padding-left:18px;}
+       .box-thanh-toan-bang-tien-mat table tr td ul li{color:#004ab2;font-size: 16px;}
+       .box-thanh-toan-bang-tien-mat table tr td ul li span{font-size: 13px;color:#000000;;}
+       
+       .box-thanh-toan-tai-nha{font-size: 13px;color:#000000;margin-top:40px;}
+    /* end payment */
+/* END  HINH THUC THANH TOAN */
+        
+/* SINGLE */
+#content-layout{padding:0px 5px;}
+.box-info-editor {font-size: 12px;color: #666666;text-align: right;}
+/* END SINGLE */
+/* PAGINATION */
+.pagination>li a{text-shadow: none;}
+.pagination>li.active a{color:#fff;}
+/* END PAGINATION */
+/* FOOTER */
+.box-footer{font-size: 12px;}
+/* END FOOTER */
+
+

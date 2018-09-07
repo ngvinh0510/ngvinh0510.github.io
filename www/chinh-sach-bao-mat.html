@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <link rel="shortcut icon" href="images/favicon.png" />
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        
+         <!-- css -->
+         <link href="css/jquery-ui-1.10.3.custom.min.css" rel="stylesheet" >
+        <link href="css/base.css" rel="stylesheet" >
+        <link href="css/bootstrap.min.css" rel="stylesheet" >
+        <link href="css/bootstrap-theme.min.css" rel="stylesheet" >
+        <link href="css/jquery.mobile-1.4.5.min.css" rel="stylesheet" >
+        <link href="css/jquery.mobile.datepicker.css" rel="stylesheet" >
+        <link href="css/swiper.min.css" rel="stylesheet" >
+        <link href="css/style.css" rel="stylesheet" >
+        <!-- end css -->
+
+        <!-- js -->
+        
+        <script>
+            
+            var cat = '';
+            
+        </script>
+        
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery.mobile-1.4.5.min.js"></script>
+        <script src="js/jquery.ui.datepicker.js"></script>
+        <script src="js/jquery.mobile.datepicker.js"></script>
+        
+        <script src="js/swiper.min.js"></script>
+        <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+        <script src="js/apps.js"></script>
+        <!-- end js -->
+        <title>Vietnam Booking</title>
+        
+        
+        
+    </head>
+    <body>
+        <header>
+            
+            <div data-role="header" id="box-container-header" data-position="fixed">
+                <table>
+                    <tr>
+                        <td><a href="index.html"><img src="images/logo_white.png" alt="logo vietnambooking"/></a></td>
+                        <td>
+                            <a href="#nav-menu-right-header" class="btn-toggle-menu-header"></a>
+                            <div data-role="panel" data-display="overlay" data-position-fixed="true" data-position="right" id="nav-menu-right-header">
+                                <ul data-role="listview" id="menu-menu-main-button-header" class="ul-menu-main-button-header ui-listview">
+                                    <li><a data-text="index" href="index.html" class="ui-btn ui-btn-icon-left home">Trang Chủ</a></li>
+                                    <li><a data-text="huongdandatve" data-ajax="false" href="dat-ve-truc-tuyen.html" class="ui-btn ui-btn-icon-left huongdandatve">Đặt vé máy bay</a></li>
+                                    <li><a data-text="gioi-thieu" href="gioi-thieu.html" class="ui-btn ui-btn-icon-left introduce">Giới thiệu</a></li>
+                                    <li><a data-text="ve-may-bay" href="ve-may-bay.html" class="ui-btn ui-btn-icon-left ticket">Vé máy bay</a></li>
+                                    <li><a data-text="khuyen-mai" href="khuyen-mai.html" class="ui-btn ui-btn-icon-left promotion">Khuyến mãi</a></li>
+                                    <li><a data-text="tin-tuc" href="tin-tuc.html" class="ui-btn ui-btn-icon-left tintuc">Tin tức</a></li>
+                                    <li><a data-text="ve-may-bay-tet" href="ve-may-bay-tet.html" class="ui-btn ui-btn-icon-left tet">Vé máy bay tết</a></li>
+                                    <li><a target="_blank" data-ajax="false" data-text="du-lich" href="http://dulich.vietnambooking.com" class="ui-btn ui-btn-icon-left tour">Du lịch</a></li>
+                                    <li><a target="_blank" data-ajax="false" data-text="khach-san" href="http://khachsan.vietnambooking.com" class="ui-btn ui-btn-icon-left hotel">Khách sạn</a></li>
+                                    <li><a target="_blank" data-ajax="false" data-text="visa" href="http://visa.vietnambooking.com" class="ui-btn ui-btn-icon-left visa">Visa</a></li>
+                                    <li><a data-text="faqs" href="faqs.html" class="ui-btn ui-btn-icon-left faqs">FAQs</a></li>
+                                    <li><a data-text="thanh-toan" href="thanh-toan.html" class="ui-btn ui-btn-icon-left payment">Thanh toán</a></li>
+                                    <li><a data-text="lien-he" href="lien-he.html" class="ui-btn ui-btn-icon-left contact">Liên hệ</a></li>
+                                    <li><a data-text="chinh-sach-bao-mat" href="chinh-sach-bao-mat.html" class="ui-btn ui-btn-icon-left security">Chính sách bảo mật</a></li>
+                                    <li><a data-text="dieu-khoan-su-dung" href="dieu-khoan-su-dung.html" class="ui-btn ui-btn-icon-left rule">Điều khoản sử dụng</a></li>
+                                    <!-- <li class="ui-last-child"><a style="position: static;" href="#" data-rel="close" class="ui-btn ui-icon-delete ui-btn-icon-left ui-btn-left ui-btn-corner-all">Đóng Menu</a></li> -->
+                                </ul>
+                            </div><!-- /panel -->
+                        </td>
+                    </tr>
+                </table>
+                 
+            </div>
+             
+        <div class="clearfix"></div>
+
+        <div class="box-bar-option">
+            <a href="#" data-transition="slide" data-rel="back" class="btn-back-page ui-btn ui-btn-b ui-icon-back ui-btn-icon-notext ui-corner-all">Quay lại</a>
+            <h1 class="title-h1">Chính sách bảo mật</h1>
+        </div>
+    </header>
+        
+        <div class="box-policy">
+            Chính sách bảo mật mô tả về phạm vi thông tin Vietnam Booking thu thập từ Qúy khách và mục đích sử dụng, cách sử dụng và các phương tiện sử dụng nhằm tối đa hóa việc bảo mật thông tin Qúy khách. Vietnam Booking cam kết bảo mật tuyệt đối thông tin cá nhân của Qúy khách và các thông tin và dữ liệu Vietnam Booking thu thập đều được bảo vệ bằng hệ thống bảo vệ dữ liệu cá nhân trực tuyến.</p><h2 style="text-align: justify;">
+            <span style="font-size:18px;"><strong>1. Cách Vietnam Booking thu thập dữ liệu</strong></span><br></h2><p style="text-align: justify;">
+            Thông tin của Qúy khách trên trang web Vietnam Booking được thu thập khi Qúy khách đăng nhập thông tin vào đơn đặt hàng trong quá trình mua vé trực tuyến và khi máy chủ tự động ghi chép các dữ liệu liên quan đến trang web bao gồm địa chỉ IP, loại trình duyệt nhằm phục vụ cho mục đích thống kê.</p><h2 style="text-align: justify;">
+            <span style="font-size:18px;"><strong>2. Phạm vi các dữ liệu được thu thập</strong></span><br></h2><p style="text-align: justify;">
+            Địa chỉ email của Qúy khách được thu thập trong quá trình đăng ký nhận tin mới từ Vietnam Booking. Thông tin Qúy khách bao gồm: họ tên đầy đủ, địa chỉ, số điện thoại, số fax, thông tin công ty (tùy chọn xuất hóa đơn) và địa chỉ mail sẽ được thu thập trong quá trình mua vé, đặt khách sạn, đặt tour du lịch. Trường hợp Qúy khách thanh toán bằng thẻ tín dụng, hệ thống Vietnam Booking sẽ thu thập thông tin số thẻ tín dụng, loại thẻ, ngày hết hạn. Trong trường hợp Qúy khách không muốn nhận các tiếp thị hoặc thông tin khuyến mãi từ Vietnam Booking, Qúy khách không nhất thiết phải tạo tài khoản trên Vietnam Booking để mua hàng và sử dụng dịch vụ. Tuy nhiên, Qúy khách phải cung cấp những thông tin cần thiết như thông tin cá nhân, chi tiết thẻ tín dụng trong quá trình book vé trực tuyến.</p><p style="text-align: justify;">
+            Ngoài ra, trong quá trình sử dụng web Vietnam Booking, vì lý do an ninh, các dữ liệu liên quan đến kết nối máy tính và trình duyệt Internet của Qúy khách đều được cập nhật tự động.</p><h2 style="text-align: justify;">
+            <strong><span style="font-size:18px;">3. Vietnam Booking thu thập thông tin để làm gì?</span></strong><br></h2><p style="text-align: justify;">
+            Thông tin cá nhân của Qúy khách được thu thập nhằm hoàn thành quá trình mua bán trực tuyến và các dịch vụ Vietnam Booking cung cấp, đặc biệt là vé máy bay, đặt phòng khách sạn và tour du lịch. Dữ liệu được thu thập cũng có thể sử dụng để cung cấp sản phẩm và dịch vụ khác của Vietnam Booking trong tương lai. Trong một số trường hợp, Vietnam Booking sẽ sử dụng thông tin để thực hiện khuyến mãi, quảng cáo hoặc hảo sát thăm dò ý kiến khách hàng sử dụng dịch vụ.</p><p style="text-align: justify;">
+            Vietnam Booking cũng thu thập thông tin cho mục đích thống kê. Dựa trên các dữ liệu, Vietnam Booking có thể thống kê sở thích của người dùng nhằm cải thiện chất lượng web mang đến sự hài lòng cho Qúy khách.</p><h2 style="text-align: justify;">
+            <strong><span style="font-size:18px;">4. Chuyển dữ liệu khách hàng qua đơn vị khác</span></strong><br></h2><p style="text-align: justify;">
+            Thông tin của Qúy khách chỉ được chuyển cho các hãng hàng không, khách sạn, ngân hàng và các nhà cung cấp dịch vụ trực tiếp khác cho Vietnam Booking. Vietnam Booking đảm bảo thông tin cá nhân khách hàng chỉ được chuyển đến các đơn vị đáng tin cậy và không lạm dụng quyền riêng tư đối với thông tin khách hàng cung cấp.</p><h2 style="text-align: justify;">
+            <span style="font-size:18px;"><strong>5. Cách thức liên lạc giữa Vietnam Booking và khách hàng</strong></span><br></h2><p style="text-align: justify;">
+            Vietnam Booking liên lạc với Qúy khách khi cần thiết qua: mail, tin nhắn SMS, fax, điện thoại hoặc gặp trực tiếp để thực hiện giao dịch hoặc thăm dò ý kiến, sự hài lòng của Qúy khách và từng bước cải thiện chức năng, tiện ích của trang web Vietnam Booking.</p><p style="text-align: justify;">
+            Vietnam Booking cũng sẽ liên lạc với Qúy khách để cung cấp các thông tin liên quan đến chương trình khuyến mãi của các hãng hàng không, nhà điều hành tour, khách sạn. Qúy khách có thể đăng ký sử dụng bất cứ lúc nào.</p><h2 style="text-align: justify;">
+            <span style="font-size:18px;"><strong>6. Thay đổi thông tin cá nhân và từ chối nhận quảng cáo</strong></span><br></h2><p style="text-align: justify;">
+            Qúy khách đã đăng ký nhận thông tin từ Vietnam Booking có thể từ chối nhận các bản tin, thông tin quảng cáo bất cứ lúc nào. Tuy nhiên, để thực hiện các giao dịch trực tuyến, quý khách vẫn phải cung cấp đầy đủ thông tin.</p><h2 style="text-align: justify;">
+            <strong><span style="font-size:18px;">7. Bảo mật dữ liệu</span></strong><br></h2><p style="text-align: justify;">
+            Nhằm bảo mật dữ liệu và thông tin thẻ tín dụng của Qúy khách, thông tin liên lạc giữa máy tính Qúy khách và máy chủ Vietnam Booking được mã hóa bằng giao thức Secure Socket Layer. Cơ sở dữ liệu thu thập được và lưu trên máy chủ Vietnam Booking được bảo vệ chống truy cập.</p><p style="text-align: justify;">
+            Chính sách bảo mật có thể được thay đổi để phù hợp với thực tế. Các thay đổi sẽ được cập nhật tới Qúy khách trên trang web Vietnam Booking.
+            
+            <div> Xem chi tiết: <a target="_blank" data-ajax="false" style="color:#000;" href="http://www.vietnambooking.com/chinh-sach-bao-mat">http://www.vietnambooking.com/chinh-sach-bao-mat</a></div>
+        </div>
+        
+      
+        
+       <footer>
+            <div class="box-footer-menu">
+                <ul>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+                    <li><a href="thanh-toan.html">Thanh toán</a></li>
+                    <li><a href="lien-he.html">Liên hệ</a></li>
+                    <li><a href="chinh-sach-bao-mat.html">Chính sách bảo mật</a></li>
+                    <li><a href="dieu-khoan-su-dung.html">Điều khoản sử dụng</a></li>
+                </ul>
+            </div>
+            <div class="box-copyright">
+                © 2016 VIETNAM BOOKING CORP<br/>
+                Số ĐKKD: <span>0308042348</span>  - Mã số thuế: <span>0308042348 </span>
+            </div>
+            
+        </footer>
+    </body>
+</html>
