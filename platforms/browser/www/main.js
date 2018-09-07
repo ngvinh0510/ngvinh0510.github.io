@@ -23,63 +23,6 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 
 /***/ }),
 
-/***/ "./src/app/app-routing.module.ts":
-/*!***************************************!*\
-  !*** ./src/app/app-routing.module.ts ***!
-  \***************************************/
-/*! exports provided: AppRoutingModule */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppRoutingModule", function() { return AppRoutingModule; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
-/* harmony import */ var _contacts_contacts_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./contacts/contacts.module */ "./src/app/contacts/contacts.module.ts");
-/* harmony import */ var _contact_detail_contact_detail_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./contact-detail/contact-detail.component */ "./src/app/contact-detail/contact-detail.component.ts");
-/* harmony import */ var _page_not_found_page_not_found_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./page-not-found/page-not-found.component */ "./src/app/page-not-found/page-not-found.component.ts");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-
-
-
-var routesConfig = [
-    { path: 'detail/:id/:name/:phoneNumber', component: _contact_detail_contact_detail_component__WEBPACK_IMPORTED_MODULE_4__["ContactDetailComponent"] },
-    { path: '', redirectTo: '/contacts', pathMatch: 'full' },
-    { path: '**', component: _page_not_found_page_not_found_component__WEBPACK_IMPORTED_MODULE_5__["PageNotFoundComponent"] }
-];
-var AppRoutingModule = /** @class */ (function () {
-    function AppRoutingModule() {
-    }
-    AppRoutingModule = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"])({
-            imports: [
-                _contacts_contacts_module__WEBPACK_IMPORTED_MODULE_3__["ContactsModule"],
-                _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forRoot(routesConfig),
-                _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"]
-            ],
-            declarations: [
-                _page_not_found_page_not_found_component__WEBPACK_IMPORTED_MODULE_5__["PageNotFoundComponent"],
-                _contact_detail_contact_detail_component__WEBPACK_IMPORTED_MODULE_4__["ContactDetailComponent"]
-            ],
-            exports: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]]
-        })
-    ], AppRoutingModule);
-    return AppRoutingModule;
-}());
-
-
-
-/***/ }),
-
 /***/ "./src/app/app.component.css":
 /*!***********************************!*\
   !*** ./src/app/app.component.css ***!
@@ -98,7 +41,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<a routerLink=\"/contacts\">Contacts</a>\n<a routerLink=\"/detail\">Detail</a>\n<router-outlet></router-outlet>"
+module.exports = "<app-weather></app-weather>"
 
 /***/ }),
 
@@ -167,10 +110,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ip_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./ip.component */ "./src/app/ip.component.ts");
 /* harmony import */ var _sign_in_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./sign-in.component */ "./src/app/sign-in.component.ts");
 /* harmony import */ var _sign_up_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./sign-up.component */ "./src/app/sign-up.component.ts");
-/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
-/* harmony import */ var _round_pipe__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./round.pipe */ "./src/app/round.pipe.ts");
-/* harmony import */ var _ip_service__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./ip.service */ "./src/app/ip.service.ts");
-/* harmony import */ var _weather_weather_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./weather/weather.component */ "./src/app/weather/weather.component.ts");
+/* harmony import */ var _round_pipe__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./round.pipe */ "./src/app/round.pipe.ts");
+/* harmony import */ var _ip_service__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./ip.service */ "./src/app/ip.service.ts");
+/* harmony import */ var _weather_weather_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./weather/weather.component */ "./src/app/weather/weather.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -196,7 +138,7 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
-
+// import { AppRoutingModule } from './app-routing.module';
 
 
 
@@ -220,8 +162,8 @@ var AppModule = /** @class */ (function () {
                 _learn_pipe_learn_pipe_component__WEBPACK_IMPORTED_MODULE_15__["LearnPipeComponent"],
                 _sign_in_component__WEBPACK_IMPORTED_MODULE_17__["SignInComponent"],
                 _ip_component__WEBPACK_IMPORTED_MODULE_16__["IpComponent"],
-                _round_pipe__WEBPACK_IMPORTED_MODULE_20__["RoundPipe"],
-                _weather_weather_component__WEBPACK_IMPORTED_MODULE_22__["WeatherComponent"],
+                _round_pipe__WEBPACK_IMPORTED_MODULE_19__["RoundPipe"],
+                _weather_weather_component__WEBPACK_IMPORTED_MODULE_21__["WeatherComponent"],
                 _sign_up_component__WEBPACK_IMPORTED_MODULE_18__["SignUpComponent"]
             ],
             imports: [
@@ -229,9 +171,8 @@ var AppModule = /** @class */ (function () {
                 _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"],
                 _angular_http__WEBPACK_IMPORTED_MODULE_3__["HttpModule"],
                 _angular_forms__WEBPACK_IMPORTED_MODULE_2__["ReactiveFormsModule"],
-                _app_routing_module__WEBPACK_IMPORTED_MODULE_19__["AppRoutingModule"]
             ],
-            providers: [_ip_service__WEBPACK_IMPORTED_MODULE_21__["IpService"]],
+            providers: [_ip_service__WEBPACK_IMPORTED_MODULE_20__["IpService"]],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
         })
     ], AppModule);
@@ -369,183 +310,6 @@ var ChildComponent = /** @class */ (function () {
         })
     ], ChildComponent);
     return ChildComponent;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/contact-detail/contact-detail.component.css":
-/*!*************************************************************!*\
-  !*** ./src/app/contact-detail/contact-detail.component.css ***!
-  \*************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = ""
-
-/***/ }),
-
-/***/ "./src/app/contact-detail/contact-detail.component.ts":
-/*!************************************************************!*\
-  !*** ./src/app/contact-detail/contact-detail.component.ts ***!
-  \************************************************************/
-/*! exports provided: ContactDetailComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ContactDetailComponent", function() { return ContactDetailComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var ContactDetailComponent = /** @class */ (function () {
-    function ContactDetailComponent(route) {
-        this.route = route;
-        this.name = '';
-        this.phoneNumber = '';
-    }
-    ContactDetailComponent.prototype.ngOnInit = function () {
-        var _this = this;
-        this.route.paramMap.subscribe(function (params) {
-            var id = params.get('id');
-            _this.name = params.get('name');
-            _this.phoneNumber = params.get('phoneNumber');
-        });
-    };
-    ContactDetailComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'app-contact-detail',
-            template: '<p>Ten: {{ name }}</p><p>SDT: {{ phoneNumber }}</p>',
-            styles: [__webpack_require__(/*! ./contact-detail.component.css */ "./src/app/contact-detail/contact-detail.component.css")]
-        }),
-        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["ActivatedRoute"]])
-    ], ContactDetailComponent);
-    return ContactDetailComponent;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/contacts/contacts.component.css":
-/*!*************************************************!*\
-  !*** ./src/app/contacts/contacts.component.css ***!
-  \*************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = ""
-
-/***/ }),
-
-/***/ "./src/app/contacts/contacts.component.html":
-/*!**************************************************!*\
-  !*** ./src/app/contacts/contacts.component.html ***!
-  \**************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<div *ngFor=\"let contact of contacts\">\n  <a routerLink=\"/detail/{{ contact.id }}/{{ contact.name }}/{{ contact.phoneNumber }}\">{{ contact.name }}</a>\n</div>"
-
-/***/ }),
-
-/***/ "./src/app/contacts/contacts.component.ts":
-/*!************************************************!*\
-  !*** ./src/app/contacts/contacts.component.ts ***!
-  \************************************************/
-/*! exports provided: ContactsComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ContactsComponent", function() { return ContactsComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var ContactsComponent = /** @class */ (function () {
-    function ContactsComponent() {
-        this.contacts = [
-            { id: 1, name: 'Teo', phoneNumber: '0123' },
-            { id: 2, name: 'Ti', phoneNumber: '0456' },
-            { id: 3, name: 'Tun', phoneNumber: '0789' },
-        ];
-    }
-    ContactsComponent.prototype.ngOnInit = function () {
-    };
-    ContactsComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'app-contacts',
-            template: __webpack_require__(/*! ./contacts.component.html */ "./src/app/contacts/contacts.component.html"),
-            styles: [__webpack_require__(/*! ./contacts.component.css */ "./src/app/contacts/contacts.component.css")]
-        }),
-        __metadata("design:paramtypes", [])
-    ], ContactsComponent);
-    return ContactsComponent;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/contacts/contacts.module.ts":
-/*!*********************************************!*\
-  !*** ./src/app/contacts/contacts.module.ts ***!
-  \*********************************************/
-/*! exports provided: ContactsModule */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ContactsModule", function() { return ContactsModule; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
-/* harmony import */ var _contacts_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./contacts.component */ "./src/app/contacts/contacts.component.ts");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-
-var routesConfig = [
-    { path: 'contacts', component: _contacts_component__WEBPACK_IMPORTED_MODULE_3__["ContactsComponent"] }
-];
-var ContactsModule = /** @class */ (function () {
-    function ContactsModule() {
-    }
-    ContactsModule = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"])({
-            imports: [
-                _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"],
-                _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild(routesConfig)
-            ],
-            declarations: [_contacts_component__WEBPACK_IMPORTED_MODULE_3__["ContactsComponent"]]
-        })
-    ], ContactsModule);
-    return ContactsModule;
 }());
 
 
@@ -775,69 +539,6 @@ var ListPersonComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], ListPersonComponent);
     return ListPersonComponent;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/page-not-found/page-not-found.component.css":
-/*!*************************************************************!*\
-  !*** ./src/app/page-not-found/page-not-found.component.css ***!
-  \*************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = ""
-
-/***/ }),
-
-/***/ "./src/app/page-not-found/page-not-found.component.html":
-/*!**************************************************************!*\
-  !*** ./src/app/page-not-found/page-not-found.component.html ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<p>\n  page-not-found works!\n</p>\n"
-
-/***/ }),
-
-/***/ "./src/app/page-not-found/page-not-found.component.ts":
-/*!************************************************************!*\
-  !*** ./src/app/page-not-found/page-not-found.component.ts ***!
-  \************************************************************/
-/*! exports provided: PageNotFoundComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PageNotFoundComponent", function() { return PageNotFoundComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var PageNotFoundComponent = /** @class */ (function () {
-    function PageNotFoundComponent() {
-    }
-    PageNotFoundComponent.prototype.ngOnInit = function () {
-    };
-    PageNotFoundComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'app-page-not-found',
-            template: __webpack_require__(/*! ./page-not-found.component.html */ "./src/app/page-not-found/page-not-found.component.html"),
-            styles: [__webpack_require__(/*! ./page-not-found.component.css */ "./src/app/page-not-found/page-not-found.component.css")]
-        }),
-        __metadata("design:paramtypes", [])
-    ], PageNotFoundComponent);
-    return PageNotFoundComponent;
 }());
 
 
